@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.dropdownBox {
+    width: 200px;
+    margin: 100px auto 0;
+}
+
+.dropdownBox .selectLanguage {
+    width: 100%;
+    padding: 13px 20px 13px 14px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: left;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    background: url(images/icon-Triangle-down.png) no-repeat;
+    background-position: right 14px center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdownBox .selectLanguage:focus {
+    border: 1px solid #9B51E0;
+    outline: 3px solid #F8E4FF;
+}
+
+.dropdownBox .selectLanguage.on {
+    background-image: url(images/icon-Triangle-up.png);
+}
+
+.dropdownBox .selectLanguage:focus {
+    border: 1px solid #9B51E0;
+    outline: 3px solid #F8E4FF;
+}
+
+.selectLanguage.on+.dropdownList {
+    display: block;
+}
+
+.dropdownBox .dropdownList {
+    display: none;
+    margin-top: 20px;
+    border: 1px solid #C4C4C4;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.dropdownBox .dropdownList li {
+    padding: 5px 18px;
+}
+
+.dropdownBox .dropdownList li button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.dropdownBox .dropdownList li button:focus,
+.dropdownBox .dropdownList li button:hover {
+    background-color: #F8E4FF;
+}
